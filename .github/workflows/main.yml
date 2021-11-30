@@ -43,9 +43,8 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: public
-          committer: fonzerelly
-          author: fonzerelly
-          domain: github.io
+          committer: christian.hoerauf@gmail.com
+          author: christian.hoerauf@gmail.com
           jekyll: false
           verbose: true
         env:
