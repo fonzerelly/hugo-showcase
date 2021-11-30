@@ -37,11 +37,16 @@ jobs:
       - name: Build HUGO Site
         run: hugo
         
+      - name: Debug
+        run: echo ${{secrets.GITHUB_TOKEN}}
+        
       # Commit site to new branch
       - name: Deploy to GH Pages
         uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
           target_branch: gh-pages
           build_dir: public
+          jekyll: false
+          verbose: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
