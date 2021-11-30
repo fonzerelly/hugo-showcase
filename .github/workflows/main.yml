@@ -46,6 +46,7 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: public
+          committer: <christian.hoerauf@gmail.com>
           jekyll: false
           verbose: true
         env:
