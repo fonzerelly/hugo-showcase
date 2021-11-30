@@ -45,6 +45,7 @@ jobs:
           build_dir: public
           committer: fonzerelly
           author: fonzerelly
+          domain: github.io
           jekyll: false
           verbose: true
         env:
