@@ -43,5 +43,9 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: public
+          committer: fonzerelly
+          author: fonzerelly
+          jekyll: false
+          verbose: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
