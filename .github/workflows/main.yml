@@ -38,7 +38,7 @@ jobs:
         run: hugo
         
       - name: Debug
-        run: echo ${{ github.action }}
+        run: echo ${{ github.token }}
         
       # Commit site to new branch
       - name: Deploy to GH Pages
