@@ -38,7 +38,7 @@ jobs:
         run: hugo
         
       - name: Debug
-        run: echo ${{secrets.GITHUB_TOKEN}}
+        run: echo ${{ github.action }}
         
       # Commit site to new branch
       - name: Deploy to GH Pages
@@ -48,4 +48,4 @@ jobs:
           build_dir: public
           verbose: true
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
