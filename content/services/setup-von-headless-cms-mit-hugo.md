@@ -2,7 +2,7 @@
 title: Setup von Headless CMS mit Hugo
 date: 2021-12-01T23:29:04.458Z
 icon: /images/uploads/des_kaisers_neue_kleider_icon.jpg
-featured: false
+featured: true
 weight: 100
 heroHeading: Headless CMS
 heroSubHeading: mit HUGO
