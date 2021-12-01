@@ -34,7 +34,7 @@ collections:
       - {label: "Hintergrund", name: "heroBackground", widget: "image", choose_url: true, default: "/services/service1.jpg", media_libraray: {config: {multiple: true}}}
       - {label: "Content", name: "body", widget: "markdown"}
 
-- name: "work"
+  - name: "work"
     label: "Work"
     folder: "content/work"
     create: true
