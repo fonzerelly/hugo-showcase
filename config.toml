@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://fonzerelly.github.io/hugo-showcase/"
 languageCode = "en-us"
 title = "Hugo Hero Theme"
 themesDir = "themes"
