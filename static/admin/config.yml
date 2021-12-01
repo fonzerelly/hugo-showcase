@@ -42,7 +42,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
-      - {lable: "Gewichtung", name: "weight", widget: "number", default: 100, value_type: "int", min: 0, max: 200, step: 1}
+      - {label: "Gewichtung", name: "weight", widget: "number", default: 100, value_type: "int", min: 0, max: 200, step: 1}
       - {label: "Hero Überschrift", name: "heroHeading", widget: "string"}
       - {label: "Hero 2. Überschrift", name: "heroSubHeading", widget: "string"}
       - {label: "Hintergrund", name: "heroBackground", widget: "image", choose_url: true, default: "/services/service1.jpg", media_libraray: {config: {multiple: true}}}
