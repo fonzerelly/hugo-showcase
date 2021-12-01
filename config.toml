@@ -1,4 +1,5 @@
-baseURL = "https://fonzerelly.github.io/hugo-showcase/"
+# baseURL = "https://fonzerelly.github.io/hugo-showcase/"
+baseURL = "https://infallible-visvesvaraya-c03fd7.netlify.app"
 languageCode = "en-us"
 title = "Hugo Hero Theme"
 themesDir = "themes"
