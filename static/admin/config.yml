@@ -45,6 +45,7 @@ collections:
       - {label: "Gewichtung", name: "weight", widget: "number", default: 100, value_type: "int", min: 0, max: 200, step: 1}
       - {label: "Hero Überschrift", name: "heroHeading", widget: "string"}
       - {label: "Hero 2. Überschrift", name: "heroSubHeading", widget: "string"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", choose_url: true, default: "/services/service1.jpg", media_libraray: {config: {multiple: true}}}
       - {label: "Hintergrund", name: "heroBackground", widget: "image", choose_url: true, default: "/services/service1.jpg", media_libraray: {config: {multiple: true}}}
-      - {label: "VordergrundBild", name: "image", widget: "image", choose_url: true, default: "/services/service1.jpg", media_libraray: {config: {multiple: true}}}
+      - {label: "Bilder", name: "images", widget: "list", summary: "{{fields.image}}", field: {label: "Image", name: "image", widget: "image"}}
       - {label: "Content", name: "body", widget: "markdown"}
