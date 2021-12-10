@@ -10,9 +10,8 @@ heroBackground: /images/uploads/des_kaisers_neue_kleider.jpg
 ---
 Wir bauen Ihnen ihr eigenes CMS mit Hugo und Netlify. Ganz einfach ein 4 Schritten:
 
-
-
 1. Theme implementieren
 2. Build Setup aufbauen
 3. Netlify Setup konfigurieren
 4. Deployment implementieren
+5. Test
