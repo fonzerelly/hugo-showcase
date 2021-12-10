@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: fonzerelly/hugo-showcase
+  branch: master # Branch to update (optional; defaults to master)
+  
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "page"
+    label: "Seite"
+    folder: "content/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Content", name: "body", widget: "markdown"}
+    
+  - name: "service"
+    label: "Service"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Icon", name: "icon", widget: "image", choose_url: true, default: "/services/service-icon-1.png", media_libraray: {config: {multiple: true}}}
+      - {label: "Prämiert", name: "featured", widget: "boolean", default: false}
+      - {lable: "Gewichtung", name: "weight", widget: "number", default: 100, value_type: "int", min: 0, max: 200, step: 1}
+      - {label: "Hero Überschrift", name: "heroHeading", widget: "string"}
+      - {label: "Hero 2. Überschrift", name: "heroSubHeading", widget: "string"}
+      - {label: "Hintergrund", name: "heroBackground", widget: "image", choose_url: true, default: "/services/service1.jpg", media_libraray: {config: {multiple: true}}}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  - name: "work"
+    label: "Work"
+    folder: "content/work"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Gewichtung", name: "weight", widget: "number", default: 100, value_type: "int", min: 0, max: 200, step: 1}
+      - {label: "Hero Überschrift", name: "heroHeading", widget: "string"}
+      - {label: "Hero 2. Überschrift", name: "heroSubHeading", widget: "string"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", choose_url: true, default: "/services/service1.jpg", media_libraray: {config: {multiple: true}}}
+      - {label: "Hintergrund", name: "heroBackground", widget: "image", choose_url: true, default: "/services/service1.jpg", media_libraray: {config: {multiple: true}}}
+      - {label: "Bilder", name: "images", widget: "list", summary: "{{fields.image}}", field: {label: "Image", name: "image", widget: "image"}}
+      - {label: "Content", name: "body", widget: "markdown"}
