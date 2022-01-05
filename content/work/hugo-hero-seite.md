@@ -9,6 +9,7 @@ heroBackground: /services/service1.jpg
 images:
   - /images/uploads/google_trends1.png
   - /images/uploads/google_trends2.png
+  - /images/uploads/massanzug-vs-von-der-stange.jpg
 image: /images/uploads/google_trends1.png
 ---
 Das war ein ganz schöner Kraft-Akt. Innerhalb von 2 Tagen haben wir ein ganzes CMS aufgesetzt mit Hugo und mit netlifycms. Aber es hat sich gelohnt.
